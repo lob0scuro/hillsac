@@ -1,0 +1,11 @@
+footer {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 3rem;
+  color: var(--blue);
+  background-color: var(--black);
+  border-radius: 12px 12px 0 0;
+  font-size: 1.2rem;
+}

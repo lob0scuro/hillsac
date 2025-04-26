@@ -1,0 +1,17 @@
+.plansHeader {
+  margin-block: 1.5rem;
+}
+
+.plansTextBlock {
+  margin-block: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.3rem;
+  width: 70vw;
+  text-align: center;
+  background-color: #30382fc9;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: -4px 4px 12px #000;
+}

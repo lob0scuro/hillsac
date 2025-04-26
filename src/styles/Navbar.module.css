@@ -1,0 +1,29 @@
+.header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  place-content: center;
+  width: 100vw;
+  height: 2rem;
+  padding: 2.8rem 0;
+  z-index: 1000;
+}
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2); /* Adjust opacity here */
+  z-index: -1; /* Stays behind all other content */
+}
+
+.header nav {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: var(--blue);
+  font-size: 1.3rem;
+}

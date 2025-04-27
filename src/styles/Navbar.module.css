@@ -31,8 +31,11 @@
 @media only screen and (max-width: 450px) {
   .header {
     width: 100%;
+    position: sticky;
+    top: 0;
   }
   .header nav {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
+    font-weight: 400;
   }
 }

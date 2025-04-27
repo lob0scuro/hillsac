@@ -30,7 +30,9 @@ const About = () => {
         </p>
         <br />
         <p className={styles.c2a}>
-          <FontAwesomeIcon icon={faPhone} /> Give us a call!
+          <a href="tel:+13375011950">
+            <FontAwesomeIcon icon={faPhone} /> Give us a call!
+          </a>
         </p>
         <br />
         <br />

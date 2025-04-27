@@ -90,6 +90,7 @@ body::before {
 @media only screen and (max-width: 450px) {
   body {
     background-position: center top;
+    height: 100%;
   }
 
   h1,

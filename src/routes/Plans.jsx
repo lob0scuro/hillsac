@@ -1,7 +1,16 @@
 import styles from "../styles/Plans.module.css";
 import Logo from "../assets/acLogo.svg";
+import { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
 
 const Plans = () => {
+  const [openPlan, setOpenPlan] = useState(null); // Keeps track of which plan is open
+
+  const togglePlan = (plan) => {
+    setOpenPlan(openPlan === plan ? null : plan); // Toggle the selected plan
+  };
+
   return (
     <>
       <div className={styles.plansTextBlock}>
@@ -34,6 +43,69 @@ const Plans = () => {
           or semi-annual air conditioner maintenance service. Let us help
           restore your peace of mind and help keep your A/C system alive.
         </p>
+        <br />
+        <div className={styles.planModels}>
+          <h2>View our plans below!</h2>
+          <div className={styles.redPlan}>
+            <h4 onClick={() => togglePlan("red")}>
+              Red Plan ($225)&nbsp;{" "}
+              <FontAwesomeIcon
+                icon={openPlan === "red" ? faChevronUp : faChevronDown}
+              />
+            </h4>
+            {openPlan === "red" && (
+              <ul>
+                <p>** 2 visits a year **</p>
+                <li>Adjusting the burner assembly</li>
+                <li>Cleaning the ignition assembly</li>
+                <li>Cleaning the heat exchanger</li>
+                <li>Monitoring the flue draft</li>
+                <li>Testing the starting capabilities</li>
+                <li>Testing the safety controls</li>
+                <li>Cleaning/Replacing the air filters</li>
+                <li>Adjusting the blower components</li>
+                <li>Measuring for correct air flow</li>
+                <li>Tightening electrical connections</li>
+                <li>Measuring volts/amps</li>
+                <li>Lubricating all moving parts</li>
+                <li>Adjusting the thermostat's calibration</li>
+                <li>Cleaning the evaporator coil if accessible</li>
+                <li>Cleaning the condenser coil</li>
+                <li>Cleaning the condensate drain and pan</li>
+                <li>Measuring temperature difference</li>
+              </ul>
+            )}
+          </div>
+          <div className={styles.bluePlan}>
+            <h4 onClick={() => togglePlan("blue")}>
+              Blue Plan ($185)&nbsp;{" "}
+              <FontAwesomeIcon
+                icon={openPlan === "blue" ? faChevronUp : faChevronDown}
+              />
+            </h4>
+            {openPlan === "blue" && (
+              <ul>
+                <p>** 1 visit a year **</p>
+
+                <li>
+                  Reduced dispatch charge to $49{" "}
+                  <small>(Normal charge is $95)</small>
+                </li>
+                <li>10% discount on HVAC parts</li>
+                <li>No extra fee for after hours</li>
+                <li>ER Repairs</li>
+                <li>
+                  $50 credit for every year you are a member of the{" "}
+                  <i>RED Tier Maintenance Plan</i>
+                </li>
+                <li>
+                  This credit can be used towards any upgrade to your system, up
+                  to $500
+                </li>
+              </ul>
+            )}
+          </div>
+        </div>
         <br />
         <br />
         <img className="logo" src={Logo} alt="" />

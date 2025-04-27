@@ -16,8 +16,75 @@
   box-shadow: -4px 4px 12px #000;
 }
 
+.planModels {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.redPlan h4 {
+  color: rgb(158, 8, 8);
+  font-size: 1.8rem;
+  text-shadow: -4px 4px 8px #000;
+  cursor: pointer;
+}
+.redPlan ul p {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #e72e2e;
+  grid-column: span 2;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.redPlan ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1.5rem;
+  row-gap: 0.6rem;
+  margin-top: 1.4rem;
+  background-color: rgba(150, 10, 10, 0.39);
+  color: #f9f9f9;
+  padding: 1rem 0.4rem;
+  border-radius: 12px;
+}
+
+.bluePlan h4 {
+  color: rgb(32, 90, 214);
+  font-size: 1.8rem;
+  text-shadow: -4px 4px 8px #000;
+  cursor: pointer;
+}
+
+.bluePlan ul p {
+  font-weight: 800;
+  color: #4b8adb;
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+
+.bluePlan ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1.4rem;
+  background-color: rgba(10, 31, 150, 0.39);
+  color: #f9f9f9;
+  padding: 1rem 0.4rem;
+  border-radius: 12px;
+}
+
 @media only screen and (max-width: 450px) {
   .plansTextBlock {
     width: 90vw;
+  }
+
+  .redPlan ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
   }
 }

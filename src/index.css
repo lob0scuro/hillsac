@@ -22,6 +22,11 @@ a.active {
   width: 10rem;
   margin-block: 1rem;
 }
+.home-logo {
+  width: 14rem;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
 
 body,
 html {
@@ -84,6 +89,10 @@ body::before {
   body {
     background-position: center top;
     height: 100%;
+    background-image: url("../src/assets/images/homesExterior2.jpg");
+  }
+  body::before {
+    background-color: rgba(0, 0, 0, 0.3);
   }
 
   h1,

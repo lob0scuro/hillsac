@@ -25,8 +25,17 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  gap: 1.5rem;
   color: var(--blue);
   font-size: 1.3rem;
+}
+
+.header nav a:last-child {
+  margin-left: auto;
+}
+
+.callUs {
+  margin-left: 0.8rem;
 }
 
 @media only screen and (max-width: 450px) {
@@ -36,7 +45,11 @@
     top: 0;
   }
   .header nav {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-weight: 400;
+    gap: 1rem;
+  }
+  .callUs {
+    display: none;
   }
 }

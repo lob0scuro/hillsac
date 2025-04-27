@@ -10,37 +10,42 @@ const Home = () => {
     <>
       <br />
       <br />
-      <img className="logo" src={Logo} alt="Hill's A/C logo" />
-      <div className={styles.contactBlock}>
-        <ul>
-          <li>
-            <a href="tel:+13375011950">
-              <FontAwesomeIcon icon={faPhone} /> <span>(337) 501-1950</span>
-            </a>
-          </li>
-          <li>
-            <a href="mailto:greghillac@gmail.com">
-              <FontAwesomeIcon icon={faEnvelope} />{" "}
-              <span>greghillac@gmail.com</span>
-            </a>
-          </li>
-          <li>
-            <a href="mailto:jessicahillac@gmail.com">
-              <FontAwesomeIcon icon={faEnvelope} />{" "}
-              <span>jessicahillac@gmail.com</span>
-            </a>
-          </li>
-          <li
-            onClick={() =>
-              (window.location.href = "https://www.facebook.com/GregHillAC")
-            }
-          >
-            <FontAwesomeIcon icon={faFacebook} />{" "}
-            <span>
-              Like us on <u>Facebook</u>
-            </span>
-          </li>
-        </ul>
+      <br />
+      <img className="logo home-logo" src={Logo} alt="Hill's A/C logo" />
+      <div className={styles.infoBlock}>
+        <div className={styles.servicesBlock}>
+          <ul>
+            <li>A/C & Heating Repairs</li>
+            <li>Maintenance</li>
+            <li>Installation</li>
+            <li>Commercial Refrigeration</li>
+          </ul>
+        </div>
+        <div className={styles.contactBlock}>
+          <ul>
+            <li>
+              <a href="mailto:greghillac@gmail.com">
+                <FontAwesomeIcon icon={faEnvelope} /> <span>Email Greg</span>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:jessicahillac@gmail.com">
+                <FontAwesomeIcon icon={faEnvelope} />{" "}
+                <span>Services & Payment Email</span>
+              </a>
+            </li>
+            <li
+              onClick={() =>
+                (window.location.href = "https://www.facebook.com/GregHillAC")
+              }
+            >
+              <FontAwesomeIcon icon={faFacebook} />{" "}
+              <span>
+                Like us on <u>Facebook</u>
+              </span>
+            </li>
+          </ul>
+        </div>
       </div>
       <div className={styles.contactForm}>
         <h3>Contact Us</h3>

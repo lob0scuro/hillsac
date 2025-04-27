@@ -5,14 +5,14 @@ import { Toaster } from "react-hot-toast";
 
 const RootLayout = () => {
   return (
-    <>
+    <div className="layout-wrapper">
       <Navbar />
       <div className="container">
         <Toaster position="bottom-right" />
         <Outlet />
       </div>
       <Footer />
-    </>
+    </div>
   );
 };
 

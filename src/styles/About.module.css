@@ -19,3 +19,12 @@
 .c2a {
   font-size: 2rem;
 }
+
+@media only screen and (max-width: 450px) {
+  .aboutHeader {
+    font-size: 1.5rem;
+  }
+  .aboutTextBlock {
+    width: 90vw;
+  }
+}

@@ -27,3 +27,12 @@
   color: var(--blue);
   font-size: 1.3rem;
 }
+
+@media only screen and (max-width: 450px) {
+  .header {
+    width: 100%;
+  }
+  .header nav {
+    font-size: 1.2rem;
+  }
+}

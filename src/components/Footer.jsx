@@ -6,7 +6,11 @@ const Footer = () => {
       <div>
         <p>Fell free to contact us at anytime!</p>
         <p>Greg & Jessica Hill</p>
-        <p>337-501-1950</p>
+        <p>
+          <a href="tel:+13375011950">
+            <u>337-501-1950</u>
+          </a>
+        </p>
       </div>
       <div>
         <p>OFFICE HOURS</p>

@@ -14,19 +14,31 @@ const Home = () => {
       <div className={styles.contactBlock}>
         <ul>
           <li>
-            <FontAwesomeIcon icon={faPhone} /> <span>337-501-1950</span>
+            <a href="tel:+13375011950">
+              <FontAwesomeIcon icon={faPhone} /> <span>(337) 501-1950</span>
+            </a>
           </li>
           <li>
-            <FontAwesomeIcon icon={faEnvelope} />{" "}
-            <span>greghillac@gmail.com</span>
+            <a href="mailto:greghillac@gmail.com">
+              <FontAwesomeIcon icon={faEnvelope} />{" "}
+              <span>greghillac@gmail.com</span>
+            </a>
           </li>
           <li>
-            <FontAwesomeIcon icon={faEnvelope} />{" "}
-            <span>jessicahillac@gmail.com</span>
+            <a href="mailto:jessicahillac@gmail.com">
+              <FontAwesomeIcon icon={faEnvelope} />{" "}
+              <span>jessicahillac@gmail.com</span>
+            </a>
           </li>
-          <li>
+          <li
+            onClick={() =>
+              (window.location.href = "https://www.facebook.com/GregHillAC")
+            }
+          >
             <FontAwesomeIcon icon={faFacebook} />{" "}
-            <span>https://www.facebook.com/GregHillAC</span>
+            <span>
+              Like us on <u>Facebook</u>
+            </span>
           </li>
         </ul>
       </div>

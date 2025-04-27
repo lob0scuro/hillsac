@@ -1,4 +1,4 @@
-footer {
+.footer {
   width: 100vw;
   display: flex;
   align-items: center;
@@ -11,7 +11,7 @@ footer {
 }
 
 @media only screen and (max-width: 450px) {
-  footer {
+  .footer {
     width: 100vw;
     font-size: 0.3rem;
     flex-direction: column;

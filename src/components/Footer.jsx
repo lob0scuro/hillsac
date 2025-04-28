@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div>
-        <p>Fell free to contact us at anytime!</p>
+        <p>Feel free to contact us at anytime!</p>
         <p>Greg & Jessica Hill</p>
         <p>
           <a href="tel:+13375011950">

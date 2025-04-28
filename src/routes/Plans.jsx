@@ -87,12 +87,12 @@ const Plans = () => {
               <ul>
                 <p>** 2 visits a year **</p>
                 <li>
-                  Includes everything in the{" "}
+                  Includes everything in the <br />
                   <span className={styles.blueInRed}>Blue Plan</span>{" "}
                   <b className={styles.plusSign}>+</b>
                 </li>
                 <li>
-                  Reduced dispatch charge to $49{" "}
+                  Reduced dispatch charge to $49 <br />
                   <small>(Normal charge is $95)</small>
                 </li>
                 <li>10% discount on HVAC parts</li>

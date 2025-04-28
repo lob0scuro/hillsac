@@ -46,16 +46,16 @@ const Plans = () => {
         <br />
         <div className={styles.planModels}>
           <h2>View our plans below!</h2>
-          <div className={styles.redPlan}>
-            <h4 onClick={() => togglePlan("red")}>
-              Red Plan ($225)&nbsp;{" "}
+          <div className={styles.bluePlan}>
+            <h4 onClick={() => togglePlan("blue")}>
+              Blue Plan ($185)&nbsp;{" "}
               <FontAwesomeIcon
-                icon={openPlan === "red" ? faChevronUp : faChevronDown}
+                icon={openPlan === "blue" ? faChevronUp : faChevronDown}
               />
             </h4>
-            {openPlan === "red" && (
+            {openPlan === "blue" && (
               <ul>
-                <p>** 2 visits a year **</p>
+                <p>** 1 visit a year **</p>
                 <li>Adjusting the burner assembly</li>
                 <li>Cleaning the ignition assembly</li>
                 <li>Cleaning the heat exchanger</li>
@@ -76,17 +76,21 @@ const Plans = () => {
               </ul>
             )}
           </div>
-          <div className={styles.bluePlan}>
-            <h4 onClick={() => togglePlan("blue")}>
-              Blue Plan ($185)&nbsp;{" "}
+          <div className={styles.redPlan}>
+            <h4 onClick={() => togglePlan("red")}>
+              Red Plan ($225)&nbsp;{" "}
               <FontAwesomeIcon
-                icon={openPlan === "blue" ? faChevronUp : faChevronDown}
+                icon={openPlan === "red" ? faChevronUp : faChevronDown}
               />
             </h4>
-            {openPlan === "blue" && (
+            {openPlan === "red" && (
               <ul>
-                <p>** 1 visit a year **</p>
-
+                <p>** 2 visits a year **</p>
+                <li>
+                  Includes everything in the{" "}
+                  <span className={styles.blueInRed}>Blue Plan</span>{" "}
+                  <b className={styles.plusSign}>+</b>
+                </li>
                 <li>
                   Reduced dispatch charge to $49{" "}
                   <small>(Normal charge is $95)</small>

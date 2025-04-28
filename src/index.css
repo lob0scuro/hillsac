@@ -85,7 +85,7 @@ body::before {
   margin-left: 1rem;
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 520px) {
   body {
     background-position: center top;
     height: 100%;
